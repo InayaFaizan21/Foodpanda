@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Food Panda Clone | Food & Grocery</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/logo - Copy.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foodpanda[5th Assignment (Bootstrap)]</title>
+        <link rel="shortcut icon" href="img/hero.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <style>
+            body {
+                overflow-x: hidden;
+            }
+
+            .dropdown {
+                background: none !important;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .dropdown-item {
+                height: 6vh !important;
+            }
+
+            .nav-item {
+                margin: 15px;
+                padding: 5px;
+                border-radius: 10px;
+                transition: background 1s;
+            }
+
+            .fs-4 {
+                color: #C21760;
+            }
+
+            .nav-item:hover {
+                background-color: rgb(219, 219, 219);
+            }
+
+            li {
+                list-style: none;
+            }
+
+            nav {
+                box-shadow: 2px 2px 10px 10px rgba(218, 218, 218, 0.575) ;
+            }
+
+            .city {
+                transition: box-shadow 1s, transform 1s;
+            }
+
+            .city:hover {
+                box-shadow: 2px 2px 10px 10px rgb(231, 231, 231);
+                transform: scale(1.06);
+            }
+
+            .icon i:hover {
+                background-color: rgb(243, 243, 243);
+                font-size: 1.7rem !important;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-flex d-xl-flex d-xxl-flex position-fixed top-0 w-100 z-3">
+            <div class="container-fluid">
+                <a class="navbar-brand  w-50" href="#">
+                    <img class=" w-25 m-2 ms-5" src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-absolute end-0 me-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ri-contacts-line fs-4"></i>
+                                    &nbsp;<span class="fw-bold ms-1">YOU</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="me-2" src="img/panday.webp" alt="" style="width: 30px;">
+                                            <span class="fw-bold fs-6">Pandapay</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-vip-crown-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Subscribe To Free delivery</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-file-list-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Orders And Reordering</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-contacts-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-sticky-note-2-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Vouchers</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-goblet-2-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Panda Rewards</span>
+                                        </a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-question-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Help Centre</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="ri-logout-box-r-line fs-4 ms-1 me-2"></i>
+                                            <span class="fw-bold fs-6">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ri-global-line fs-4"></i>
+                                    &nbsp;<span class="fw-bold ms-1">ENGLISH</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="fw-bold fs-6">ENGLISH</span>
+                                            <i class="ri-checkbox-circle-line fs-4 ms-2"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="ri-delete-bin-line fs-4"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-expand-lg bg-body-tertiary d-lg-none d-xl-none d-xxl-none">
+            <ul class="d-flex justify-content-between w-100 align-items-center p-2">
+                <li class="w-25 text-center">
+                    <i class="ri-contacts-line w-100 fs-2"></i>
+                </li>
+                <li class="w-25 text-center">
+                    <img class="" src="img/logo.png" alt="" style="width: 180px;margin-left: -50px;">
+                </li>
+                <li class="w-25 text-center">
+                    <i class="ri-delete-bin-line w-100 fs-2"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid mb-lg-5 mb-xl-5 mb-xxl-5 mb-0 mt-lg-5">
+            <div class="row h-100" style="background: linear-gradient(rgb(240, 240, 240) , rgb(244, 244, 244) ,rgb(255, 255, 255));">
+                <div class="col-6 h-100">
+                    <h1 class="fw-bolder ms-5 mb-5" style="margin-top: 20%;">It's the food and groceries you love, delivered
+        </h1>
+                    <form class="ms-5 mt-4  bg-white  p-3 me-5 rounded d-none d-lg-flex d-xl-flex d-xxl-flex" action="#" style="box-shadow: 2px 2px 5px 5px rgb(185, 185, 185);">
+                        <input type="text" placeholder="Your Street And Street Number" class="rounded ps-3 p-2" style="border: 1px solid rgb(189, 189, 189) !important; width: 80%;">
+                        <button class="text-light fw-bold p-2 rounded ms-2" style="background-color: #C31760;border: none !important;">Find Food</button>
+                    </form>
+                </div>
+                <div class="col-6 h-100 position-relative">
+                    <img class="" src="img/5th Assignment Web & App (Bootstrap) Image 3.webp" alt="" style="width: 100%;position: absolute;top: 70px;">
+                </div>
+            </div>
+            <form class="w-100 d-lg-none d-xl-none d-xxl-none d-flex flex-column justify-content-center" action="">
+                <input class="w-100 d-block mb-0 ps-5 rounded" style="height: 45px !important;border: 1px solid grey !important;" type="text" placeholder="Your Street And Street Number">
+                <br>
+                <button class="w-100 d-block mt-0 rounded text-light fw-bolder" style="height: 40px !important;border: none !important;background-color: #C21760;">Find Food</button>
+            </form>
+        </div>
+        <div class="container-fluid mt-lg-5 mt-0 mt-lg-5 mt-xl-5 mt-xxl-5 pt-0 pt-lg-3 pt-xl-3 pt-xxl-3 mb-5 mb-lg-0 mb-xl-0 mb-xxl-0">
+            <div class="mb-0 mb-lg-5 mb-xl-5 mb-xxl-5 mt-0 mt-xl-5 mt-lg-5 mt-xxl-5 pt-0 pt-lg-5 pt-xl-5 pt-xxl-5">
+                <h1 class="pt-lg-5 pt-xl-5 pt-xxl-5 fw-bolder mt-5 ms-1 ms-lg-5 ms-xl-5 ms-xxl-5">You prepare the food, we handle the rest</h1>
+                <div class="container-fluid mt-5 border d-none d-lg-block d-xl-block d-xxl-block" style="background-image: url(img/home-vendor-pk.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;height: 80vh !important;">
+                    <div class="rounded bg-white ps-4 pt-4 pb-4 pe-3 ms-5" style="width: 590px !important;margin-top: 28% !important;box-shadow: 2px 2px 7px 7px rgb(240, 240, 240) !important">
+                        <p class="fs-3 text-dark">List your restaurant or shop on foodpanda</p>
+                        <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                        <p>It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+                        <p>Interested? Let's start our partnership today!</p>
+                        <button class="text-light fw-bolder rounded p-2" style="background-color: #C21760;border: none !important;">Get Started</button>
+                    </div>
+                </div>
+                <div class="container-fluid mt-5 border d-block d-lg-none d-xl-none d-xxl-none" style="background-image: url(img/home-vendor-pk.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;height: 45vh !important;">
+                    <div class="rounded bg-white ps-4 pt-4 pb-4 pe-3 mb-5" style="width: 100% !important;margin-top: 55% !important;box-shadow: 2px 2px 7px 7px rgb(240, 240, 240) !important">
+                        <p class="fs-3 text-dark">List your restaurant or shop on foodpanda</p>
+                        <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                        <p class="d-none">Interested? Let's start our partnership today!</p>
+                        <button class="text-light fw-bolder rounded p-2" style="background-color: #C21760;border: none !important;">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 mt-lg-0 mt-xl-0 mt-xxl-0" style="margin-top: 200px !important;">
+            <h1 class="fw-bolder ms-1 mb-5 ms-lg-5 ms-xl-5 ms-xxl-5" style="">Find us in these cities and many more!</h1>
+            <div class="container d-flex flex-wrap justify-content-center">
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Islamabad.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Islamabad</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Karachi.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Karachi</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Lahore.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Lahore</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Sukkur.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Faisalabad</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Rawalpindi.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Rawalpindi</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Abottabad.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Abbotabad</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Bahawalpur.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Bahawalpur</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-DeraGhaziKhan.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Dera Ghazi Khan</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Gujranwala.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Gujaranwala</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Gujrat.jpg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Gujrat</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Hyderabad.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Hyderabad</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Jhelum.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Jhelum</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Kamoke.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Kamoke</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Larkana.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Larkana</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Mangla.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Mangla</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Mardan.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Mardan</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Multan.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Mulatan</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Murree.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Murree</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Okara.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Okara</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-PanoAqil.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Pano Aqil</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Peshawar.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Peshawar</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Quetta.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Quetta</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-RahimYarKhan.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Rahim Yar Khan</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Sadiqabad.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Sadiqabad</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Sahiwal.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Sahiwal</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Sargodha.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Sargodha</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/city-tile-Sheikhupura.jpg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Sheikhupura</p>
+                </div>
+                <div class="m-2 border city" style="border-radius: 30px;background-image: url(img/Sialkot.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;width: 250px !important;height: 250px;">
+                    &nbsp;<p class="bg-white text-center w-75 mx-auto p-2 fs-5 fw-bold" style="margin-top: 160px;">Sialkot</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-none d-lg-block d-xl-block d-xxl-block">
+            <h1 class="ms-1 ms-lg-5 ms-xl-5 ms-xxl-5 mt-5 fw-bolder">Put us in your pocket</h1>
+            <div class="container d-flex mt-5" style="background-color: #C21760;color: white !important;border-radius: 30px !important;height: 300px !important;">
+                <div class="w-50">
+                    <h1 class="fs-3 mt-4 ms-3">Download the food and groceries you love</h1>
+                    <p class="fs-5 lh-2 mt-4 ms-3">
+                        <img class="me-2" src="img/pkhomepageqrcode.png" alt="" align="left" style="width: 150px !important;">It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.
+          
+                    </p>
+                </div>
+                <div class="w-50">
+                    <img class="w-100" src="img/home-foodpanda-apps.png" alt="" style="margin-top: -60px !important;">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-lg-none d-xl-none d-xxl-none">
+            <h1 class="ms-1 ms-lg-5 ms-xl-5 ms-xxl-5 mt-5 fw-bolder">Put us in your pocket</h1>
+            <div class="container d-flex mt-5" style="background-color: #C21760;color: white !important;border-radius: 30px !important;height: 200px !important;">
+                <div class="w-50">
+                    <h1 class="fs-3 mt-4 ms-3">Download the food and groceries you love</h1>
+                </div>
+                <div class="w-50">
+                    <img class="" src="img/home-foodpanda-apps - Copy.png" alt="" style="width: 100% !important;margin-left: 10px !important;height: 150% !important;margin-top: -50px !important;">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-lg-5 mt-0 mt-lg-5 mt-xl-5 mt-xxl-5 pt-0 pt-lg-3 pt-xl-3 pt-xxl-3 mb-5 mb-lg-0 mb-xl-0 mb-xxl-0">
+            <div class="mb-0 mb-lg-5 mb-xl-5 mb-xxl-5 mt-0 mt-xl-5 mt-lg-5 mt-xxl-5 pt-0 pt-lg-5 pt-xl-5 pt-xxl-5">
+                <h1 class="pt-lg-5 pt-xl-5 pt-xxl-5 fw-bolder mt-5 ms-1 ms-lg-5 ms-xl-5 ms-xxl-5">Take your office out to lunch</h1>
+                <div class="container-fluid mt-5 border d-none d-lg-block d-xl-block d-xxl-block" style="background-image: url(img/office.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;height: 80vh !important;">
+                    <div class="rounded bg-white ps-4 pt-4 pb-4 pe-3 ms-5" style="width: 590px !important;margin-top: 28% !important;box-shadow: 2px 2px 7px 7px rgb(240, 240, 240) !important">
+                        <p class="fs-3 text-dark">foodpanda for business</p>
+                        <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                        <p>It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+                        <p>Interested? Let's start our partnership today!</p>
+                        <button class="text-light fw-bolder rounded p-2" style="background-color: #C21760;border: none !important;">Get Started</button>
+                    </div>
+                </div>
+                <div class="container-fluid mt-5 border d-block d-lg-none d-xl-none d-xxl-none" style="background-image: url(img/office.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;height: 45vh !important;">
+                    <div class="rounded bg-white ps-4 pt-4 pb-4 pe-3 mb-5" style="width: 100% !important;margin-top: 55% !important;box-shadow: 2px 2px 7px 7px rgb(240, 240, 240) !important">
+                        <p class="fs-3 text-dark">foodpanda for business</p>
+                        <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                        <p class="d-none">Interested? Let's start our partnership today!</p>
+                        <button class="text-light fw-bolder rounded p-2" style="background-color: #C21760;border: none !important;">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top pt-3 d-flex justify-content-between mb-2 d-none d-lg-block d-xl-block d-xxl-block" style="margin-top: 250px !important;">
+            <div class="border-end pe-5" style="">
+                <img src="img/logo.png" alt="" style="width: 190px !important;">
+            </div>
+            <div class="icon">
+                <i class="ri-facebook-fill border rounded p-1 fs-4 me-2"></i>
+                <i class="ri-instagram-fill border rounded p-1 fs-4"></i>
+            </div>
+        </div>
+        <div class="container border-top pt-3 d-flex justify-content-between mb-2 d-lg-none d-xl-none d-xxl-none" style="margin-top: 180px !important;">
+            <div class="border-end pe-5" style="">
+                <img src="img/logo.png" alt="" style="width:180px !important">
+            </div>
+            <div class="icon">
+                <i class="ri-facebook-fill border rounded p-1 fs-4 me-2"></i>
+                <i class="ri-instagram-fill border rounded p-1 fs-4"></i>
+            </div>
+        </div>
+        <footer class="border-top border-bottom container fw-bold d-flex justify-content-center align-items-center fs-3 p-3" style="color: #C21760 !important;">
+            <p>
+                This Clone Is Made By &nbsp;<a href="https://github.com/DeveloperInsharah" style="color: #C21760 !important;">@ Inaya-Faizan </a>
+            </p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
